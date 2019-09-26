@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Enemies/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Enemies from './components/Enemies.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Enemies
   }
 }
 </script>
