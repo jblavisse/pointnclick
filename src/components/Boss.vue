@@ -12,13 +12,16 @@
 <script>
 export default {
   name: 'Boss',
-  data: function()
-  {
-      return {
-          lifePoints: 50,
-          remainingPoints: 50
+  computed:{
+      remainingPoints: function()
+      {
+          return this.$root.$data.store.remainingPoints;
+      },
+      lifePoints: function()
+      {
+         return  this.$root.$data.store.lifePoints;
       }
-  }
+  },
 }
 </script>
 

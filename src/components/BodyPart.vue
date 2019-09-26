@@ -1,5 +1,5 @@
 <template>
-  <div class="body-part">
+  <div class="body-part" @click="removeOnePoint">
       <img :src="require(`@/assets/rubilax/${link}`)" alt="Sous-fifre">
       <div :class="position">
           <span class="remaining-points">{{remainingPoints}}</span>
@@ -9,14 +9,25 @@
 </template>
 
 <script>
+
 export default {
   name: 'BodyPart',
   props: ['link','position'],
-  data: function()
-  {
-      return {
-          lifePoints: 50,
-          remainingPoints: 50
+  computed:{
+      remainingPoints: function()
+      {
+          return this.$root.$data.store.remainingPoints;
+      },
+      lifePoints: function()
+      {
+         return  this.$root.$data.store.lifePoints;
+      }
+  },
+  methods: {
+      removeOnePoint: function()
+      {
+          this.$root.$data.store.remainingPoints--;
+          console.log(this.$root.$data.store.remainingPoints)
       }
   }
 }

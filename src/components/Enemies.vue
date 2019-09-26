@@ -10,6 +10,7 @@
 <script>
 import Boss from './Boss.vue'
 import Monster from './Monster.vue'
+import Store from '../store'
 
 export default {
   name: 'Enemies',
