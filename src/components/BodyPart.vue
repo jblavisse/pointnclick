@@ -1,7 +1,6 @@
 <template>
   <div class="body-part">
       <img :src="link" alt="Sous-fifre">
-      <h2>Sous-fifre</h2>
       <div>
           <span class="remaining-points">{{remainingPoints}}</span>
           <span class="life-points">/{{lifePoints}}</span>
@@ -26,5 +25,9 @@ export default {
 <style scoped>
 span {
     font-size: 0.75rem;
+}
+
+img {
+    cursor:pointer;
 }
 </style>

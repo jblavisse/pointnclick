@@ -1,11 +1,15 @@
 <template>
   <div class="monster">
-      <BodyPart link="../assets/rubilax/body.jpg"/>
-      <BodyPart link="../assets/rubilax/head.jpg"/>
-      <BodyPart link="../assets/rubilax/arm-right.jpg"/>
-      <BodyPart link="../assets/rubilax/arm-left.jpg"/>
-      <BodyPart link="../assets/rubilax/leg-left.jpg"/>
-      <BodyPart link="../assets/rubilax/leg-right.jpg"/>
+      <div class="parts">
+      <BodyPart link="https://framapic.org/CTkAtE1gURRy/k0yZXPxB9mKU.jpg"/>
+      <BodyPart link="https://framapic.org/zPPNREIKAK4X/BhdukoYQcWab.jpg"/>
+      <BodyPart link="https://framapic.org/ZHAQ9BSycs8D/lYCXUR0YcTPZ.jpg"/>
+      <BodyPart link="https://framapic.org/krZf0nk0XFg5/iWlCGdjWJJ3H.jpg"/>
+      <BodyPart link="https://framapic.org/sF5LMLpmsxgk/mYkj8glZHR2w.jpg"/>
+      <BodyPart link="https://framapic.org/sF5LMLpmsxgk/mYkj8glZHR2w.jpg"/>
+      </div>
+
+      <h2>Sous-fifre</h2>
   </div>
 </template>
 
@@ -21,4 +25,7 @@ export default {
 </script>
 
 <style scoped>
+ .parts {
+     display: flex;
+ }
 </style>

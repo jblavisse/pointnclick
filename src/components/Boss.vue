@@ -1,5 +1,5 @@
 <template>
-  <div class="enemies">
+  <div class="boss">
       <img src="../assets/rushu.png" alt="THE BOSS">
       <h2>Rushu</h2>
       <div>
